@@ -1,0 +1,45 @@
+.audio-player {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.player-controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #7e57c2;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.stop-button {
+  background: #e53935 !important;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.volume-control input[type="range"] {
+  width: 100px;
+}
+
+.volume-control span {
+  min-width: 40px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666;
+}

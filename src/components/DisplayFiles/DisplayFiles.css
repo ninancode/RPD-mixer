@@ -1,0 +1,33 @@
+* For the preview buttons in parent component */
+.file-preview {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.file-preview button {
+  background: #7e57c2;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message {
+  margin-top: 16px;
+  padding: 12px;
+  background: #ffebee;
+  border-radius: 4px;
+  color: #c62828;
+}
+
+.warning-badge {
+  background: #ff9800;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  margin-left: 8px;
+}

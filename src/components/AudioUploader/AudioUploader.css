@@ -1,0 +1,30 @@
+.upload-zone {
+  border: 2px dashed #b39ddb;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: #f3e5f5;
+}
+
+.upload-zone.active {
+  border-color: #7b1fa2;
+  background: #e1bee7;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-content svg {
+  margin-bottom: 0.5rem;
+}
+
+.upload-content small {
+  color: #666;
+  font-size: 0.8em;
+}
