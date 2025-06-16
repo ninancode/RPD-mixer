@@ -1,38 +1,84 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #EDEDED;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.background-image {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  background-color: #EDEDED;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background-image img {
+  width: 100%;
+  min-height:100%;
+  object-fit: cover;
+  /* position: absolute; */
+ /* -webkit-mask-image: linear-gradient(
+    to top, 
+    transparent 0%,
+    transparent 60%,
+    rgba(237, 237, 237, 0.1) 70%,
+    rgba(237, 237, 237, 0.3) 80%,
+    rgba(237, 237, 237, 0.6) 90%,
+    rgba(237, 237, 237, 0.8) 95%,
+    #EDEDED 100%
+  );
+  mask-image: linear-gradient(
+    to top, 
+    transparent 0%,
+    transparent 60%,
+    rgba(237, 237, 237, 0.1) 70%,
+    rgba(237, 237, 237, 0.3) 80%,
+    rgba(237, 237, 237, 0.6) 90%,
+    rgba(237, 237, 237, 0.8) 95%,
+    #EDEDED 100%
+  ); */
+  /* color: transparent; */
 }
+
+.fade-overlay {
+  /* position: absolute; */
+  /* bottom: 0;
+  left: 0;
+  right: 0;
+  
+  background: linear-gradient(
+    to bottom, 
+    transparent 0%,
+    transparent 50%,
+    rgba(237, 237, 237, 0.1) 65%,
+    rgba(237, 237, 237, 0.3) 75%,
+    rgba(237, 237, 237, 0.6) 85%,
+    rgba(237, 237, 237, 0.8) 92%,
+    #ededed 100%
+  ); */
+  height: 70vh;
+  -webkit-mask-image: linear-gradient(
+    to top, 
+       rgba(237, 237, 237, .1) 40%,
+      rgba(237, 237, 237, 0.3) 50%,
+      rgba(237, 237, 237, 0.6) 60%,
+      rgba(237, 237, 237, 0.8) 90%,
+      #EDEDED 100%
+  );
+  mask-image: linear-gradient(
+    to top, 
+    transparent 30%,
+    rgba(237, 237, 237, .1) 40%,
+    rgba(237, 237, 237, 0.3) 50%,
+    rgba(237, 237, 237, 0.6) 60%,
+    rgba(237, 237, 237, 0.8) 90%,
+    #EDEDED 100%
+  );
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+}
+
+

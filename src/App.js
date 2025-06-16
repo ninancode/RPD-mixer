@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import background from './assets/images/gidle.jpg';
+import PageContent from './components/PageContent/PageContent';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='background-image'>
+        <div class="fade-overlay">
+         <img src={background} alt='G-Idle'></img>
+         </div>
+      </div>
+      <PageContent/>
+
     </div>
   );
 }

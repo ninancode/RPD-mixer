@@ -1,0 +1,23 @@
+.upload-area{
+  border: 2px dashed #777777;
+  min-width: 350px;
+  min-height: 145px;
+  max-height: 15vh;
+  background-color: #EDEDED;
+  padding-top: 1vh;
+  color: #777777;
+  border-radius: 30px;
+}
+
+.upload-icon{
+  width: 48px; 
+  height: 48px; 
+  fill: none; 
+  stroke: currentColor;
+}
+
+.upload-text{
+    font-size: calc(10px + 2vmin);
+    font-weight: 500;
+    margin: 10px;
+}

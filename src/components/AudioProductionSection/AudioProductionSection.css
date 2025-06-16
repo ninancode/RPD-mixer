@@ -1,0 +1,31 @@
+.content-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    /* margin-top: -5vh; */
+}
+.audio-production-section{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center; /* Center the grid */
+    width: 100%;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.column{
+    box-sizing: border-box; /* Ensures width includes padding & border */
+    padding: 10px; /* Optional: Adds internal spacing */
+}
+
+
+.column:not(:last-child) {
+  border-right: 1px solid #777777; 
+}
+
+.no-track-text{
+    color: #777777;
+}
