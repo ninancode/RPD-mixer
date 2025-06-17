@@ -16,7 +16,7 @@
   stroke: currentColor;
 }
 
-.upload-text{
+.button-text{
     font-size: calc(10px + 2vmin);
     font-weight: 500;
     margin: 10px;

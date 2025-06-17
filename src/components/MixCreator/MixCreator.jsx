@@ -1,9 +1,10 @@
+import CreateMixButton from '../buttons/CreateMixButton/CreateMixButton';
 import './MixCreator.css';
 
 export default function MixCreator(){
     return(
-        <div>
-            <p>Mix Creator</p>
+        <div className='mix-creator-container'>
+            <CreateMixButton/>
         </div>
     )
 }

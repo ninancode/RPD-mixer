@@ -4,8 +4,7 @@ import UploadedTracks from "../UploadedTracks/UploadedTracks";
 import ToggleTracks from "../ToggleTracks/ToggleTracks";
 import MixCreator from "../MixCreator/MixCreator";
 
-export default function AudioProductionSection(){
-    const [hasTracks,setHasTracks] = useState(false);
+export default function AudioProductionSection({hasTracks}){
     return(
         <div className="content-div">
             {hasTracks ? 
@@ -21,7 +20,9 @@ export default function AudioProductionSection(){
                     </div>                   
                 </div> 
             : 
+            <div className="no-track-container">
                 <h1 className="no-track-text">Create Your Own RPD</h1>
+            </div>
             }
         </div>
     )
