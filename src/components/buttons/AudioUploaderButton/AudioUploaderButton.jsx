@@ -1,0 +1,34 @@
+import './AudioUploaderButton.css';
+import { useCallback } from 'react';
+
+export default function AudioUploarder({setHasTracks, onFilesUpload}){
+    const handleFileChange = useCallback((e) => {
+        const files = Array.from(e.target.files);
+        if (files.length > 0) {
+            onFilesUpload(files);
+            setHasTracks(true);
+        }
+    }, [onFilesUpload, setHasTracks]);
+
+    return (
+        <>
+         <input 
+                type="file" 
+                id="audio-upload"
+                accept=".mp3,.wav,.m4a"
+                multiple
+                onChange={handleFileChange}
+                style={{ display: 'none' }}
+            />
+        <label htmlFor="audio-upload" className='upload-area'>
+            <svg className='upload-icon' viewBox="0 0 24 24" >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+            <p className='button-text'>Upload</p>
+            <small>Supports MP3, WAV, M4A</small>
+        </label>
+        </>
+    )
+}

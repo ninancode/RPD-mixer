@@ -1,36 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './AudioProductionSection.css';
 import UploadedTracks from "../UploadedTracks/UploadedTracks";
 import ToggleTracks from "../ToggleTracks/ToggleTracks";
 import MixCreator from "../MixCreator/MixCreator";
 
-export default function AudioProductionSection({hasTracks}){
-        const initialTracks = [
-        { id: 1, artist: "Radiohead", title: "Paranoid Android", toggled: false },
-        { id: 2, artist: "The Beatles", title: "Yesterday", toggled: false },
-        { id: 3, artist: "Radiohead", title: "Karma Police", toggled: false },
-        { id: 4, artist: "Nirvana", title: "Smells Like Teen Spirit", toggled: false },
-        { id: 5, artist: "The Beatles", title: "Hey Jude", toggled: false },
-    ];
 
-    const [tracks, setTracks] = useState(initialTracks);
+export default function AudioProductionSection({ hasTracks, uploadedFiles, setUploadedFiles }){
+
+    // const [tracks, setTracks] = useState(initialTracks);
+
+     // Function to update track metadata
+    const updateTrackMetadata = (trackId, newMetadata) => {
+        setUploadedFiles(uploadedFiles.map(track => 
+            track.id === trackId ? { ...track, ...newMetadata } : track
+        ));
+    };
 
     // Sort tracks alphabetically by artist then title
-    const sortedTracks = [...tracks].sort((a, b) => {
+    const sortedTracks = [...uploadedFiles].sort((a, b) => {
         if (a.artist === b.artist) {
             return a.title.localeCompare(b.title);
         }
         return a.artist.localeCompare(b.artist);
     });
 
-    // Function to toggle a track
+       // Function to toggle a track
     const toggleTrack = (trackId) => {
-        setTracks(tracks.map(track => 
+        setUploadedFiles(uploadedFiles.map(track => 
             track.id === trackId ? { ...track, toggled: !track.toggled } : track
         ));
     };
     // const toggledTracks = uploadedTracks.filter(track => track.isToggled);
 
+useEffect(() => {
+        return () => {
+            uploadedFiles.forEach(file => {
+                URL.revokeObjectURL(file.id);
+            });
+        };
+    }, [uploadedFiles]);
 
     return(
         <div className="content-div">
