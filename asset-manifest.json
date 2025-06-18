@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RPD-mixer/static/css/main.c8e51e85.css",
-    "main.js": "/RPD-mixer/static/js/main.64c7ed5e.js",
+    "main.css": "/RPD-mixer/static/css/main.82d8db81.css",
+    "main.js": "/RPD-mixer/static/js/main.bd1aa172.js",
     "static/js/453.01d183fc.chunk.js": "/RPD-mixer/static/js/453.01d183fc.chunk.js",
     "static/media/gidle.jpg": "/RPD-mixer/static/media/gidle.d2e6e7219f74b1658e18.jpg",
     "index.html": "/RPD-mixer/index.html",
-    "main.c8e51e85.css.map": "/RPD-mixer/static/css/main.c8e51e85.css.map",
-    "main.64c7ed5e.js.map": "/RPD-mixer/static/js/main.64c7ed5e.js.map",
+    "main.82d8db81.css.map": "/RPD-mixer/static/css/main.82d8db81.css.map",
+    "main.bd1aa172.js.map": "/RPD-mixer/static/js/main.bd1aa172.js.map",
     "453.01d183fc.chunk.js.map": "/RPD-mixer/static/js/453.01d183fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8e51e85.css",
-    "static/js/main.64c7ed5e.js"
+    "static/css/main.82d8db81.css",
+    "static/js/main.bd1aa172.js"
   ]
 }
