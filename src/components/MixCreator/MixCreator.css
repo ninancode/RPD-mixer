@@ -1,7 +1,23 @@
+.button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width:30vw;
+}
+
 .mix-creator-container{
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 100%;
+}
 
+.download-icon{
+  width: 48px; 
+  height: 48px; 
+  margin: 0 5px 0 5px;
+  fill: none; 
+  stroke: #777777;
+  stroke-width: 1.5;
 }

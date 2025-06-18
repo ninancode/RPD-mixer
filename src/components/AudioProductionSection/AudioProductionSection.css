@@ -21,13 +21,26 @@
 }
 
 .column{
-    box-sizing: border-box; /* Ensures width includes padding & border */
-    padding: 10px; /* Optional: Adds internal spacing */
+    box-sizing: border-box; 
+    padding: 10px;
     flex-direction: column;
     height: 35vh;
     overflow-x:hidden;
-     overflow-y: auto;
-     white-space: nowrap;
+    overflow-y: auto;
+    white-space: nowrap;
+    position: relative;
+    -webkit-mask-image: 
+      linear-gradient(to bottom, 
+        transparent 0%, 
+        #EDEDED 10%, 
+        #EDEDED 90%, 
+        transparent 100%);
+    mask-image: 
+      linear-gradient(to bottom, 
+        transparent 0%, 
+        #EDEDED 10%, 
+        #EDEDED 90%, 
+        transparent 100%);
 }
 
 .column::-webkit-scrollbar {
