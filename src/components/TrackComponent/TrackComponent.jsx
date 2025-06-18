@@ -2,21 +2,24 @@ import { useState } from 'react';
 import PlayButton from '../buttons/PlayButton/PlayButton';
 import './TrackComponent.css';
 
-export default function TrackComponent({toggled}){
-    // const [toggled, setToggled] = useState(false);
+export default function TrackComponent({ track, onToggle, showPlayButton }){
+    const handleClick = () => {
+        onToggle(track.id);
+    };
     return(
-        <div>
+        <div onClick={handleClick} style={{ cursor: 'pointer' }}>
             <div className='track-container'>
-                {!toggled?
+                {showPlayButton?
+
                     <div className='play-button-container'>
-                        <PlayButton circleColor="#9496E5" triangleColor="#EDEDED" />
+                        <PlayButton circleColor={track.toggled? "#65B370" : "#9496E5"} triangleColor="#EDEDED" />
                     </div> 
                     :
                     <div className='no-play-button'></div>
                 }
-                <p>Artist</p>
+                <p>{track.artist}</p>
                 <p> - </p>
-                <p>Song Title</p>
+                <p>{track.title}</p>
             </div>
             <hr className='track-seperator'/>
         </div>

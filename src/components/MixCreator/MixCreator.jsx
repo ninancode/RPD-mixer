@@ -19,7 +19,6 @@ export default function MixCreator(){
                             <polyline points="13 18 16 22 19 18" />
                             <line x1="16" y1="8" x2="16" y2="22" />
                         </svg>
-
                         <MixButton setMixAvailable={setMixAvailable} mixAvailable={mixAvailable}/>
                      </div>
                      
