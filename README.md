@@ -3,11 +3,11 @@ Upload your K-pop chorus snippets to create a custom Random Play Dance (RPD) tra
 
 In K-pop culture, Random Play Dance (RPD) events let fans jump in and perform choreography on the spot. This tool helps you:
 
-🎧 Upload chorus snippets.
+* 🎧 Upload chorus snippets.
 
-🔀 Randomize or handpick tracks for your mix.
+* 🔀 Randomize or handpick tracks for your mix.
 
-⏱️ Generate a seamless RPD track with countdowns.
+* ⏱️ Generate a seamless RPD track with countdowns.
 
 Try it now: [RPD Mixer](https://ninancode.github.io/RPD-mixer/)
 
@@ -24,8 +24,6 @@ Try it now: [RPD Mixer](https://ninancode.github.io/RPD-mixer/)
 4. Randomize or manually arrange the order.
 5. Save your mix and share it with dancers!
 
-
-🛠️ Technologies Used
-Frontend: React, JavaScript, HTML/CSS
-
-Deployment: GitHub Pages
+## 🛠️ Technologies Used
+* Frontend: React, JavaScript, HTML/CSS
+* Deployment: GitHub Pages
