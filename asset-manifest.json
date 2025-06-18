@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/RPD-mixer/static/css/main.82d8db81.css",
-    "main.js": "/RPD-mixer/static/js/main.bd1aa172.js",
+    "main.js": "/RPD-mixer/static/js/main.d9ba61ed.js",
     "static/js/453.01d183fc.chunk.js": "/RPD-mixer/static/js/453.01d183fc.chunk.js",
     "static/media/gidle.jpg": "/RPD-mixer/static/media/gidle.d2e6e7219f74b1658e18.jpg",
     "index.html": "/RPD-mixer/index.html",
     "main.82d8db81.css.map": "/RPD-mixer/static/css/main.82d8db81.css.map",
-    "main.bd1aa172.js.map": "/RPD-mixer/static/js/main.bd1aa172.js.map",
+    "main.d9ba61ed.js.map": "/RPD-mixer/static/js/main.d9ba61ed.js.map",
     "453.01d183fc.chunk.js.map": "/RPD-mixer/static/js/453.01d183fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82d8db81.css",
-    "static/js/main.bd1aa172.js"
+    "static/js/main.d9ba61ed.js"
   ]
 }
